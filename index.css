@@ -2,8 +2,18 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: blueviolet;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(82, 25, 136);
+    border-radius: 10px;
 }
 
 body{
@@ -276,5 +286,32 @@ footer .container{
 
     #nuestros-cursos .carta{
         padding: 50px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 3.5em;
+    }
+
+    #final .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(imagenes/final.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        width: 100%;
     }
 }
