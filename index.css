@@ -90,7 +90,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     ) 
-    ,url(imagenes/nucba\hero\2.jpeg);
+    ,url(imagenes/nucba\ hero\ 2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -239,7 +239,7 @@ footer .container{
     }
 
     #somos-nucba .image-container{
-        background-image: url("imagenes/nucba\hero.png") ;
+        background-image: url(imagenes/nucba\ hero.png) ;
         background-size: cover;
         background-position: center center;
         height: 500px;
