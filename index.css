@@ -1,13 +1,16 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+::placeholder { color: white; }
+
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 18px;
     background-color: blueviolet;
 }
 
@@ -54,6 +57,7 @@ button:hover{
 
 header{
     background-color: rgb(245, 245, 245);
+    max-width: 100%;
 }
 
 header .logo{
@@ -62,12 +66,14 @@ header .logo{
     font-weight: bold;
     color: blueviolet;
     font-size: 1.6em;
+    cursor: pointer;
 }
 
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 header nav{
@@ -198,6 +204,7 @@ header a:hover{
 
 #final h2{
     font-size: 9vw;
+    margin-bottom: 12px;
 }
 
 #final button{
@@ -221,7 +228,107 @@ footer .container{
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
+.login{
+    background: rgb(107, 33, 177);
+    height: 100vh;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .container{
+    width: 80%;
+    height: 50%;
+    max-height: 404px;
+    max-width: 512px;
+    background-color: rgba(230, 230, 230, 0.9);
+    box-shadow: 5px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.login h5{
+    margin-bottom: 40px;
+    height: 40px;
+    border-bottom: 1px solid rgb(30, 30, 30);
+    font-size: 1.5em;
+}
+
+.login input{
+    width: 70%;
+    height: 25px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    border: 2px solid rgba(82, 25, 136);
+    background-color: rgb(107, 33, 177,0.8);
+    color: white;
+    padding-left: 10px;
+}
+
+.login a{
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.login-btn:hover{
+    background-color: rgb(102, 30, 169);
+}
+
+.register{
+    background: rgb(107, 33, 177);
+    height: 100vh;
+    width:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .container{
+    width: 80%;
+    height: 50%;
+    max-height: 404px;
+    max-width: 512px;
+    background-color: rgba(230, 230, 230, 0.9);
+    box-shadow: 5px 5px 10px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.register h5{
+    margin-bottom: 40px;
+    height: 40px;
+    border-bottom: 1px solid rgb(30, 30, 30);
+    font-size: 1.5em;
+}
+
+.register input{
+    width: 70%;
+    height: 25px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    border: 2px solid rgba(82, 25, 136);
+    background-color: rgb(107, 33, 177,0.8);
+    color: white;
+    padding-left: 10px;
+}
+
+.register a{
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.register-btn:hover{
+    background-color: rgb(102, 30, 169);
+}
+
+@media (min-width: 780px){
     
     header{
         position: fixed;
@@ -231,6 +338,7 @@ footer .container{
     header .container{
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 
     header nav{
@@ -273,6 +381,7 @@ footer .container{
     #nuestros-cursos .container-cartas{
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 
     #nuestros-cursos p{
@@ -285,7 +394,8 @@ footer .container{
     }
 
     #nuestros-cursos .carta{
-        padding: 50px;
+        padding: 30px;
+        width: 30%;
     }
 
     #final h2{
@@ -314,4 +424,6 @@ footer .container{
         height: 100%;
         width: 100%;
     }
+
+    
 }
